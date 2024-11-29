@@ -1,0 +1,209 @@
+.containers{
+    position: relative;
+    padding: 100px;
+    background: $bodyAlternativo;
+    color: $white;
+    @media(max-width:700px){
+        padding: 20px 20px;
+    }
+    &__proyectos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 80px;
+        @media(max-width:700px){
+            flex-direction: column;
+        }
+        &-titulo{
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            margin: auto;
+            // --clip: polygon(0 0, 0 0, 0 95%, 0 100%);
+            @media(max-width:700px){
+                font-size: 2.8rem;
+            }
+            &::after{
+                content: ' ';
+                display: block;
+                background: $white;
+                width: 60%;
+                margin-top: 3px;
+                height: 3px;
+                clip-path: var(--clip);
+                transition: clip-path 1.8s ease-in-out; 
+                
+            }&:hover{
+                --clip: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            }
+        }
+        &-descripcion{
+            flex-basis: 45%;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 50px;
+            position: relative;
+            &:hover .overlay{
+                opacity: 1;
+            }
+            &:hover .containers__proyectos-service{
+                bottom: 30%;
+                opacity: 1;
+                @media(max-width:700px){
+                    bottom: 10%;
+                }
+            }
+        }
+        &-img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 50px;
+            object-position: center;
+        }
+        &-service{
+            width: 80%;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            opacity: 0;
+            transform: translateX(-50%);
+            transition: .8s;
+            @media(min-width:700px){
+                width: 100%;
+            }
+            &:hover{
+                bottom: 40%;
+                opacity: .9;
+            }
+            &-titulo{
+                font-size: 2.5rem;
+                font-weight: 600;
+                text-shadow: 1px 1px 4px $white;
+                &-c{
+                    @extend .containers__proyectos-service-titulo;
+                    color: #14253d;
+                }
+                &-d{
+                    @extend .containers__proyectos-service-titulo;
+                    color: $white;
+                    text-shadow: 1px 1px 4px $black;
+                }
+                &-r{
+                    @extend .containers__proyectos-service-titulo;
+                    color: $white;
+                    text-shadow: 1px 1px 4px #FFC0CB;
+                }
+                &-p{
+                    @extend .containers__proyectos-service-titulo;
+                    color: $white;
+                    text-shadow: 1px 1px 4px #2b1055;
+                }
+            }
+            &-descr{
+                color: $white;
+                padding-top: 5px;
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin-bottom: 30px;
+                padding: 10px;
+            }
+            &-linea{
+                background: $white;
+                height: 2px;
+                border: 0;
+                margin: 10px auto;
+                width: 60%;
+            }
+            &-a{
+                border: 2px solid #6E07F3;
+                border-radius: 50%;
+                padding: 10px 15px;
+                font-size: 1.2rem;
+                color: $white;
+                text-decoration: none;
+                transition: .6s;
+                &-c{
+                    @extend .containers__proyectos-service-a;
+                    background: white;
+                    color: #13243b;
+                    border: 2px solid $white;
+                    transition: all .5s;
+                    &:hover{
+                        background: #13243b;
+                        color: $white;
+                        transition: all .2s;
+                        border: 2xp solid $white;
+                    }
+                }
+                &-m{
+                    @extend .containers__proyectos-service-a-c;
+                    background: white;
+                    color: #3da878;
+                    border: 2px solid $white;
+                    transition: all .5s;
+                    &:hover{
+                        background: #3da878;
+                        color: $white;
+                        transition: all .2s;
+                        border: 2xp solid $white;
+                    }
+                }
+                &-r{
+                    @extend .containers__proyectos-service-a;
+                    background: white;
+                    color: #eeb7bf;
+                    border: 2px solid $white;
+                    transition: all .5s;
+                    &:hover{
+                        background: #eeb7bf;
+                        color: $white;
+                        transition: all .3s;
+                        border: 2xp solid $white;
+                    }
+                }
+                &-p{
+                    @extend .containers__proyectos-service-a;
+                    background: white;
+                    color: #cb9df0;
+                    border: 2px solid $white;
+                    transition: all .5s;
+                    &:hover{
+                        background: #cb9df0;
+                        color: $white;
+                        transition: all .3s;
+                        border: 2xp solid $white;
+                    }
+                }
+            }
+        }
+        &-servicios{
+            margin-bottom: 0;
+        }
+    }
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0;
+    background: linear-gradient(rgba(0,0,0,0.5),#14253d);
+    transition: 1s;
+    &:hover{
+        opacity: 1;
+    }
+}
+.overlay-deportivo{
+    @extend .overlay;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(82, 255, 168, 0.631372549));
+}
+.overlay-rabbit{
+    @extend .overlay;
+    background: linear-gradient(rgba(0,0,0,0.5),#FFC0CB);
+}
+.overlay-barber{
+    @extend .overlay;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #d5a4fc)
+}

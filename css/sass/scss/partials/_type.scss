@@ -1,0 +1,130 @@
+
+.text{
+
+    //Colores 
+    &--white { color: $white !important;}
+    &--verde { color: $verde !important;}
+    &--fb { color: $fb !important;}
+    &--body{ color: $body !important}
+    
+
+    //Tamaños 
+        &--xs   { font-size: 10px;}
+        &--xm   { font-size: 11px;}
+        &--xl   { font-size: 12px;}
+        &--xls  { font-size: 13px;}
+        &--sm   { font-size: 14px;}
+        &--sml  { font-size: 15px;}
+        &--md   { font-size: 16px;}
+        &--smd  { font-size: 18px;}
+        &--lg   { font-size: 21px;}
+        &--lgx  { font-size: 22px;}
+        &--xiii { font-size: 24px;}
+        
+        &--xlxl { font-size: 32px !important;}
+        &--xlxs { font-size: 36px !important;}
+        &--xlls { font-size: 50px !important;}
+        &--xlsm { font-size: 60px !important;}
+        &--xlmd { font-size: 70px !important;}
+        
+    
+    //Font-weight
+        &--lighter  { font-weight: 100; }
+        &--thin     { font-weight: 200; }
+        &--light    { font-weight: 300; }
+        &--normal   { font-weight: 400; }
+        &--medium   { font-weight: 500; }
+        &--semibold { font-weight: 600; }
+        &--bold     { font-weight: 700; }
+        &--extrabold{ font-weight: 800; }
+        &--megabold { font-weight: 900; }
+
+    // Espaciado entre parrafo
+        &--lh-14 {line-height: 14px;}
+        &--lh-16 {line-height: 16px;}
+        &--lh-18 {line-height: 18px;}
+        &--lh-20 {line-height: 20px;}
+        &--lh-22 {line-height: 22px;}
+        &--lh-24 {line-height: 24px;}
+        &--lh-26 {line-height: 26px;}
+        &--lh-60 {line-height: 60px;}
+}
+// .parrafos{
+//     font-size: .9em;
+//     font-weight: 400;
+//     line-height: 22px;
+//     letter-spacing: 0em;
+//   }
+  
+//   .text {
+//       color: black;
+//       font-weight: normal;
+//       //font-size
+//       &--m	      { font-size: .3em; }
+//       &--s	      { font-size: .4em; }
+//       &--sl       { font-size: .5em; }
+//       &--x	      { font-size: .55em; }
+//       &--xs	      { font-size: .65em; }
+//       &--xm 		  { font-size: .7em; }
+//       &--xl       { font-size: .8em; }
+//       &--xls      { font-size: .85em; }
+//       &--sm 		  { font-size: .9em; }
+//       &--sml 		  { font-size: 1em; }
+//       &--md 		  { font-size: 1.2em; }
+//       &--lg 		  { font-size: 1.3em; }
+//       &--lgx 		  { font-size: 1.4em; }
+//       &--lgxs 	  { font-size: 1.5em; }
+//       &--lgxsm 	  { font-size: 1.6em; }
+//       &--lgxm 	  { font-size: 1.8em; }
+//       &--lgxl 	  { font-size: 1.9em; }
+//       &--lgxls 	  { font-size: 2em; }
+//       &--lgsm 	  { font-size: 2.2em; }
+//       &--lgsmd 	  { font-size: 2.5em; }
+//       &--lgsmlg   { font-size: 2.8em; }
+//       &--lgmd 	  { font-size:   3em; }
+//       &--lglg	    { font-size:   4em; }
+//       &--xlx	    { font-size:   5em; }
+//       &--xlxs	    { font-size:   6em; }
+//       &--xlxm     { font-size:   7em; }
+//       &--xlxl     { font-size:   8em; }
+//       &--xlsm     { font-size:   9em; }
+//       &--xlmd     { font-size:   10em; }
+//       &--xiii     { font-size:   13em; }
+//       &--xiv      { font-size:   14em; }
+//       &--xv       { font-size:   15em; }
+  
+//       //font-weight
+//       &--lighter    { font-weight: 100; }
+//       &--thin 	    { font-weight: 200; }
+//       &--light 	    { font-weight: 300; }
+//       &--normal     { font-weight: 400; }
+//       &--medium     { font-weight: 500; }
+//       &--semibold   { font-weight: 600; }
+//       // &--bold 	    { font-weight: 700; }
+//       &--extrabold  { font-weight: 800; }
+//       &--megabold   { font-weight: 900; }
+  
+//       //font-style
+//       &--italic 	  { font-style: italic; }
+//       &--upper      { text-transform: uppercase; }
+//       &--underline   { text-decoration: underline; }
+  
+//       //letter-spacing
+//       &--lh-1       { line-height: 1; }
+//       &--lh-normal  { line-height: normal; }
+//       &--ls-1       { letter-spacing: -1px; }
+  
+//       //text-decoration
+//       &--line-through { text-decoration: line-through; }
+  
+//       //font-color
+      
+//       //font-family
+//       // &--muli 	    { font-family: $muli; }
+//       // &--lato       { font-family: $lato; }
+//       // &--heebo      { font-family: $heebo; }
+//       // &--awesome    { font-family: $awesome; }
+//       // &--oswald     { font-family: $oswald; }
+//       // &--work-sans  { font-family: $work-sans; }
+//   }
+  

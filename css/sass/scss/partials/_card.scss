@@ -1,0 +1,10 @@
+.card-servicios{
+    cursor: pointer;
+    border: 2px solid $verde;
+    transition: all .9s;
+    &:hover{
+        box-shadow: 0px 0px 30px $verde;
+        transition: all .6s ease-out;
+        transform: translateY(-15px);
+    }
+}

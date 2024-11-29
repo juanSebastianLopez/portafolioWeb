@@ -1,0 +1,17 @@
+section{
+    @media(min-width: 789px){
+        height: 88vh;
+        margin-top: 60px;
+
+    }
+}
+.image{
+    &-principal{
+        border-radius: 60% 80% 80% 40%/90% 90% 50% 40%;
+        border: 1px solid $verde;
+    }
+    &-sobremi{
+        border-radius: 50% 20% 200% 50%/10% 50% 10% 50%;
+        border: 1px solid $verde;
+    }
+}
